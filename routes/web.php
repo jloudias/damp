@@ -13,10 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// ACESSO LIVRE
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Desabilita auto-registro
 Auth::routes(['register'=>false]);
 
+// ACESSO AUTENTICADO
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// ACESSO ADMINISTRADORES
+Route::prefix('admin')->middleware('auth','admin')->group(function(){
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+});
