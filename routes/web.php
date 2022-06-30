@@ -29,4 +29,6 @@ Route::prefix('admin')->middleware('auth','admin')->group(function(){
     Route::get('/', function () {
         return view('admin.index');
     });
+    Route::resource('user', App\Http\Controllers\UserController::class);
+    Route::resource('post', App\Http\Controllers\PostController::class);
 });

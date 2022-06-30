@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Usuários')
+@section('title', 'Posts')
 
 @section('content_header')
-    <h1>Usuários</h1>
+    <h1>Posts</h1>
 @stop
 
 @section('content')
-    <head>Welcome to the dashboard</head>
+    <head>Welcome to the blog</head>
 @stop
 
 @section('css')

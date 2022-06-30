@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Dampege',
-    'title_prefix' => '',
+    'title' => 'SisCOND',
+    'title_prefix' => 'SisCOND - ',
     'title_postfix' => '',
 
     /*
@@ -31,7 +31,7 @@ return [
     */
 
     'use_ico_only' => false,
-    'use_full_favicon' => false,
+    'use_full_favicon' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -188,10 +188,10 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
     'logout_url' => 'logout',
     'login_url' => 'login',
-    'register_url' => 'register',
+    'register_url' => false,
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
     'profile_url' => false,
@@ -236,16 +236,27 @@ return [
             'topnav_right' => true,
         ],
 
+
         // Sidebar items:
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
+
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Usuários',
+            'route'  => 'user.index',
+            'icon' => 'fas fa-fw fa-user',
         ],
+
+        [
+            'text' => 'Posts',
+            'url'=> 'admin/post',
+            'icon' => 'far fa-fw fa-file',
+            // 'can'  => 'manage-blog',
+        ],
+
+        /*
         [
             'text'        => 'pages',
             'url'         => 'admin/pages',
@@ -254,17 +265,14 @@ return [
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
+
+
         [
             'text' => 'change_password',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        [
+         [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
@@ -317,7 +325,7 @@ return [
             'text'       => 'information',
             'icon_color' => 'cyan',
             'url'        => '#',
-        ],
+        ], */
     ],
 
     /*
