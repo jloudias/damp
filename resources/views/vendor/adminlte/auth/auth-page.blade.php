@@ -11,6 +11,14 @@
 @section('adminlte_css')
     @stack('css')
     @yield('css')
+    <style>
+        body{
+            /* background-color:#f5f5f5;*/
+            background-image: url("{{ asset('img/jp.jpg')}}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 @stop
 
 @section('classes_body'){{ ($auth_type ?? 'login') . '-page' }}@stop
