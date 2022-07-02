@@ -21,14 +21,14 @@
 
 <div class="card card-dark">
     <div class="card-header">
-        <h3 class="card-title">Add User</h3>
+        <h3 class="card-title">Edit User</h3>
     </div>
     <form action="{{ route('user.update', $user->id)}}" method="POST">
         @csrf
         @method('PUT')
         <div class="card-body">
             <div class="form-group">
-                <x-adminlte-input name="username" value="{{ $user->username }}" label="* All fields required." label-class="text-danger" placeholder="username" required>
+                <x-adminlte-input name="username" value="{{ $user->username }}" placeholder="username" required>
                     <x-slot name="prependSlot">
                         <div class="input-group-text">
                             <i class="fas fa-at text-lightblue"></i>
@@ -56,6 +56,16 @@
                     </x-slot>
                 </x-adminlte-input>
             </div>
+
+            {{-- <div class="form-group">
+                <x-adminlte-input value='' name="password" type="password" placeholder="password">
+                    <x-slot name="prependSlot">
+                        <div class="input-group-text">
+                            <i class="fas fa-key text-lightblue"></i>
+                        </div>
+                    </x-slot>
+                </x-adminlte-input>
+            </div> --}}
 
         </div>
 

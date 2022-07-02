@@ -102,12 +102,12 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-primary',
-    'classes_auth_header' => '',
+    'classes_auth_card' => 'card-outline card-secondary',
+    'classes_auth_header' => 'bg-gradient-dark',
     'classes_auth_body' => '',
-    'classes_auth_footer' => '',
+    'classes_auth_footer' => 'text-center',
     'classes_auth_icon' => '',
-    'classes_auth_btn' => 'btn-flat btn-primary',
+    'classes_auth_btn' => 'btn-flat btn-dark',
 
     /*
     |--------------------------------------------------------------------------
@@ -193,7 +193,9 @@ return [
     'login_url' => 'login',
     'register_url' => false,
     'password_reset_url' => 'password/reset',
-    'password_email_url' => 'password/email',
+    //'password_reset_url' => false,
+    // 'password_email_url' => 'password/email',
+    'password_email_url' => false,
     'profile_url' => false,
 
     /*
@@ -226,11 +228,11 @@ return [
 
     'menu' => [
         // Navbar items:
-        [
+        /* [
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
-        ],
+        ], */
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
@@ -238,13 +240,13 @@ return [
 
 
         // Sidebar items:
-        [
+        /* [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
-        ],
+        ], */
 
         [
-            'text' => 'Usuários',
+            'text' => 'Users',
             'route'  => 'user.index',
             'icon' => 'fas fa-fw fa-user',
         ],
@@ -451,6 +453,16 @@ return [
                     'type' => 'js',
                     'asset' => true,
                     'location' => 'vendor/toastr/toastr.min.js',
+                ],
+            ],
+        ],
+        'icheckBootstrap'=>[
+            'active'=>true,
+            'files'=>[
+                [
+                    'type'=>'css',
+                    'location'=> 'vendor/icheck-bootstrap/icheck-bootstrap.min.css'
+
                 ],
             ],
         ],
