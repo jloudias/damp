@@ -1,0 +1,210 @@
+/* Modify Boostrap defaults */
+
+.navbar-dark .navbar-brand{
+	/*color: #C4C4C4;*/
+  color:#F1F1F1;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  /*background-color: #D4D4D4;*/
+  color: #d8d8d8; 
+  font-size: 1rem;
+ 
+}
+
+.panel-body > ul >li{
+  padding-bottom: 6px;
+}
+.panel-title > a{
+  text-decoration: none;
+}
+.panel-title > a:hover{
+  color:#999999;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+.dropdown-menu>li>a:hover{
+  background-color: #eee;
+}
+
+/* Footer */
+.footer{
+	background-color: #EAEAEA;
+}
+.footer a{
+  color: #555;
+}
+
+/* texto do copyright */
+.text-muted{
+	font-family: 'Lato', sans-serif;
+  color: #555;
+}
+
+/* My classess */
+.my-page-header{
+	padding-bottom: 9px;
+  margin: 40px 0 10px;
+}
+.navbar-nome{
+	color: white;
+  padding-top: 15px;
+}
+.erro-login{
+  color:red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #eee;
+  padding: 10px;
+  margin: 0 30px;
+  border-left: 10px solid;
+}
+.my-lead{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+
+/*
+.nav-tabs > li > a {
+  background: #eaedf2;
+  border: 1px solid #a48686;
+  border-bottom: none;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 1.5em;
+}
+*/
+
+/* Blog */
+
+#blog-page{
+  padding-top: 90px;
+}
+
+#blog-page img{
+  width:100%;
+}
+
+.blog-text p{ 
+  text-rendering:optmizeLegibility; 
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.post-meta{
+  font-style: italic;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+#subscribe-box{
+  border: 5px dashed #32CD32;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 5px 15px ;
+  text-align: center;
+}
+
+#subscribe-box h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+#subscribe-box p{
+  text-align: justify;
+  padding-bottom: 5px;
+}
+
+#subscribe-box .btn{
+  font-size: 15px;
+  font-family: 'Lato', courier, sans serif;
+  /*letter-spacing: 1.5px;*/
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#aviso h4{
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#aviso p{
+  line-height: 1.8em;
+  text-rendering:optmizeLegibility;
+  text-align: justify;
+}
+
+#populares{
+  margin-top: 50px;
+}
+
+#populares ul li:first-child{
+  background-color: #efefef;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Home */
+#quem-somos{
+  padding-top: 80px;
+}
+
+#quem-somos a{
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  padding: 15px;
+  margin:10px;
+  height: 50px;
+}
+#colab{
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/* Sobre */
+#sobre{
+  margin-top: 50px;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: repeat;
+}
+#sobre img{
+  border-radius: 100px;
+  float: left;
+  margin-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sobre h2{
+  line-height: 1.5;
+  color:#e74c3c;
+  font-family: 'Arvo', courier, serif;
+  text-align: justify;
+  font-size: 25px;
+}
+
+#sobre-text{
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/** FAQ */
+#accordion p,a{
+  line-height: 1.5;
+}
+
+/* Medias */
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}

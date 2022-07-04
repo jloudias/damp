@@ -23,6 +23,10 @@ Auth::routes(['register'=>false]);
 
 // ACESSO AUTENTICADO
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Trocar senha (usuário)
+Route::get('change-password', [App\Http\Controllers\UserController::class, 'editPassword'])->name('edit.password');
+Route::post('change-password', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('update.password');
+
 
 // ACESSO ADMINISTRADORES
 Route::prefix('admin')->middleware('auth','admin')->group(function(){

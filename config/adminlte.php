@@ -102,7 +102,7 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-secondary',
+    'classes_auth_card' => 'card-secondary',
     'classes_auth_header' => 'bg-gradient-dark',
     'classes_auth_body' => '',
     'classes_auth_footer' => 'text-center',

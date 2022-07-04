@@ -57,7 +57,7 @@
                 </x-adminlte-input>
             </div>
 
-            {{-- <div class="form-group">
+            <div class="form-group">
                 <x-adminlte-input value='' name="password" type="password" placeholder="password">
                     <x-slot name="prependSlot">
                         <div class="input-group-text">
@@ -65,7 +65,7 @@
                         </div>
                     </x-slot>
                 </x-adminlte-input>
-            </div> --}}
+            </div>
 
         </div>
 
