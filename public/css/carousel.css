@@ -50,7 +50,7 @@ body {
     text-align: center;
   }
   .marketing h2 {
-    font-weight: 3rem;
+    font-weight: 2.5rem;
     color: #e74c3c;
     font-family: 'Arvo', courier, serif;
     text-transform: uppercase;
@@ -81,8 +81,8 @@ body {
     /* rtl:remove */
     letter-spacing: -.05rem;
   }
-  
-  
+
+     
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   

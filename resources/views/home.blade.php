@@ -90,6 +90,7 @@
     </div><!-- /.row -->
 
 
+    {{--
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
@@ -157,9 +158,91 @@
 
     <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+    <!-- /END THE FEATURETTES --> --}}
 
 </div><!-- /.container -->
+
+{{-- Administrative Council section --}}
+
+<div class="container council mt-5">
+    <hr class="featurette-divider">
+    <h2>Conselho &nbsp; Administrativo</h2>
+    <div class="row text-center bg-light">
+        <div class="col">
+            <p>
+                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
+                    data-holder-rendered="true">
+            </p>
+
+            <div class="council-name">Hildebrando Alves de Oliveira</div>
+            <p class="council-function">Síndico</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col">
+            <p>
+                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
+                    data-holder-rendered="true">
+            </p>
+            <div class="council-name">José Liberalino da Nóbrega</div>
+            <p class="council-function">Subsíndico</p>
+
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col">
+            <p>
+                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
+                    data-holder-rendered="true">
+            </p>
+            <div class="council-name">Jorge Loureiro Dias</div>
+            <p class="council-function">Conselheiro</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col">
+            <p>
+                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
+                    data-holder-rendered="true">
+            </p>
+            <div class="council-name">Fernanda Maria Lucena de Oliveira</div>
+            <p class="council-function">Conselheiro</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col">
+            <p>
+                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
+                    data-holder-rendered="true">
+            </p>
+            <div class="council-name">Eugênio Cabral Pacelli da Costa</div>
+            <p class="council-function">Conselheiro</p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+</div>
+<!-- Begin footer.inc -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <p class="fs-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nemo non vero sint voluptas, nulla
+                    libero eligendi possimus deleniti quo saepe error, provident nostrum dolorum, id ipsam, quisquam
+                    praesentium pariatur.
+                </p>
+            </div>
+            <div class="col"></div>
+            <div class="col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.114463832188!2d-34.827858600000035!3d-7.112731899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd23606ca353%3A0xfcba3e76b328c985!2sR.+Isidro+Gomes%2C+435+-+Tamba%C3%BA%2C+Jo%C3%A3o+Pessoa+-+PB%2C+58039-160!5e0!3m2!1spt-BR!2sbr!4v1444134267159"
+                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <p class="text-muted text-center">
+            &copy;&nbsp;2015 - &nbsp;
+            <a href="mailto:jloudias@gmail.com">Jorge LoureiroDias</a>
+        </p>
+    </div>
+</footer>
 
 
 @stop
