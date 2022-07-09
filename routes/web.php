@@ -14,14 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 // ACESSO LIVRE
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
 
 // Desabilita auto-registro
 Auth::routes(['register'=>false]);
 
 // ACESSO AUTENTICADO
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Trocar senha (usuário)
 Route::get('change-password', [App\Http\Controllers\UserController::class, 'editPassword'])->name('edit.password');

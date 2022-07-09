@@ -1,248 +1,407 @@
 @extends('layouts.app')
 
 @section('content')
-{{-- Carousel section--}}
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!-- HERO SLIDER SECTION-->
+<section class="text-white bg-cover bg-center primary-overlay overlay-dense"
+  style="background: url('img/photogrid.jpg') repeat">
+  <div class="overlay-content py-5">
+    <div class="container py-4">
+      <!-- Hero slider-->
+      <div class="swiper-container homepage-slider">
+        <div class="swiper-wrapper">
+          <!-- Hero Slide-->
+          <div class="swiper-slide h-auto mb-5">
+            <div class="row gy-5 h-100 align-items-center">
+              <div class="col-lg-5 text-lg-end"><img class="ml-auto img-fluid" src="img/logo.png" alt="">
+                <h1 class="text-uppercase">Multipurpose responsive theme</h1>
+                <ul class="list-unstyled text-uppercase fw-bold mb-0">
+                  <li class="mb-2">Business. Corporate. Agency.</li>
+                  <li>Portfolio. Blog. E-commerce.</li>
+                </ul>
+              </div>
+              <div class="col-lg-7"><img class="img-fluid" src="img/template-homepage.png" alt=""></div>
+            </div>
+          </div>
+          <!-- Hero Slide-->
+          <div class="swiper-slide h-auto mb-5">
+            <div class="row gy-5 h-100 align-items-center">
+              <div class="col-lg-7"><img class="img-fluid" src="img/template-mac.png" alt=""></div>
+              <div class="col-lg-5">
+                <h1 class="text-uppercase">46 HTML pages full of features</h1>
+                <ul class="list-unstyled text-uppercase fw-bold mb-0">
+                  <li class="mb-2">Sliders and carousels</li>
+                  <li class="mb-2">4 Header variations</li>
+                  <li class="mb-2">Google maps, Forms, Megamenu, CSS3 Animations and much more</li>
+                  <li>+ 11 extra pages showing template features</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Slide-->
+          <div class="swiper-slide h-auto mb-5">
+            <div class="row gy-5 h-100 align-items-center">
+              <div class="col-lg-5 text-lg-end">
+                <h1 class="text-uppercase">Design</h1>
+                <ul class="list-unstyled text-uppercase fw-bold mb-0">
+                  <li class="mb-2">Clean and elegant design</li>
+                  <li class="mb-2">Full width and boxed mode</li>
+                  <li class="mb-2">Easily readable Roboto font and awesome icons</li>
+                  <li>7 preprepared colour variations</li>
+                </ul>
+              </div>
+              <div class="col-md-7"><img class="img-fluid" src="img/template-easy-customize.png" alt=""></div>
+            </div>
+          </div>
+          <!-- Hero Slide-->
+          <div class="swiper-slide h-auto mb-5">
+            <div class="row gy-5 h-100 align-items-center">
+              <div class="col-lg-7"><img class="img-fluid" src="img/template-easy-code.png" alt=""></div>
+              <div class="col-lg-5">
+                <h1 class="text-uppercase">Easy to customize</h1>
+                <ul class="list-unstyled text-uppercase fw-bold mb-0">
+                  <li class="mb-2">7 preprepared colour variations.</li>
+                  <li>Easily to change fonts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-light"></div>
+      </div>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{{ asset('img/slide_zika.jpg')}}" alt="Mosquito dengue">
-
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>Todos contra a dengue.</h1>
-                    <p>Some representative placeholder content for the first slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('img/slide_ocorrencia.jpg')}}" alt="">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Livro de Ocorrências.</h1>
-                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('img/slide_senha.jpg')}}" alt="senha">
-
-            <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>Proteja sua senha.</h1>
-                    <p>Some representative placeholder content for the third slide of this carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
-            </div>
-        </div>
+  </div>
+</section>
+<!-- WHO ARE WE SECTION-->
+<section class="py-5">
+  <div class="container py-4">
+    <header class="mb-5">
+      <h2 class="lined lined-center text-uppercase mb-4">Who are we?</h2>
+    </header>
+    <div class="row gy-4">
+      <!-- Team member  -->
+      <div class="col-lg-3 col-md-6 text-center"><a href="team-member.html"><img class="avatar avatar-xxl p-2 mb-4"
+            src="img/person-1.jpg" alt="Han Solo"></a>
+        <h3 class="h4 mb-1 text-uppercase"><a class="text-reset" href="team-member.html">Han Solo</a></h3>
+        <p class="text-muted small text-uppercase">Founder</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="social-link facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="social-link twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="social-link youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a class="social-link email" href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p class="small small text-gray-600">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+          ac turpis egestas.</p>
+      </div>
+      <!-- Team member  -->
+      <div class="col-lg-3 col-md-6 text-center"><a href="team-member.html"><img class="avatar avatar-xxl p-2 mb-4"
+            src="img/person-2.jpg" alt="Luke Skywalker"></a>
+        <h3 class="h4 mb-1 text-uppercase"><a class="text-reset" href="team-member.html">Luke Skywalker</a></h3>
+        <p class="text-muted small text-uppercase">CTO</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="social-link facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="social-link twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="social-link youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a class="social-link email" href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p class="small small text-gray-600">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+          ac turpis egestas.</p>
+      </div>
+      <!-- Team member  -->
+      <div class="col-lg-3 col-md-6 text-center"><a href="team-member.html"><img class="avatar avatar-xxl p-2 mb-4"
+            src="img/person-3.png" alt="Princess Leia"></a>
+        <h3 class="h4 mb-1 text-uppercase"><a class="text-reset" href="team-member.html">Princess Leia</a></h3>
+        <p class="text-muted small text-uppercase">Team Leader</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="social-link facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="social-link twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="social-link youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a class="social-link email" href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p class="small small text-gray-600">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+          ac turpis egestas.</p>
+      </div>
+      <!-- Team member  -->
+      <div class="col-lg-3 col-md-6 text-center"><a href="team-member.html"><img class="avatar avatar-xxl p-2 mb-4"
+            src="img/person-4.jpg" alt="Jabba Hut"></a>
+        <h3 class="h4 mb-1 text-uppercase"><a class="text-reset" href="team-member.html">Jabba Hut</a></h3>
+        <p class="text-muted small text-uppercase">Lead Developer</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="social-link facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="social-link twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="social-link youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a class="social-link email" href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p class="small small text-gray-600">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+          ac turpis egestas.</p>
+      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-{{-- Marketing section --}}
-<div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
+  </div>
+</section>
+<!-- BANNER SECTION-->
+<section class="py-5 bg-fixed bg-cover bg-center dark-overlay" style="background: url(img/fixed-background-2.jpg)">
+  <div class="overlay-content">
+    <div class="container py-4 text-white text-center">
+      <div class="icon icon-outlined icon-lg mx-auto mb-4">
+        <svg class="svg-icon text-white svg-icon-lg">
+          <use xlink:href="#numbers-1"> </use>
+        </svg>
+      </div>
+      <h2 class="text-uppercase mb-3">Do you want to see more?</h2>
+      <p class="lead mb-4">We have prepared for you more than 40 different HTML pages, including 5 variations of
+        homepage.</p><a class="btn btn-outline-light btn-lg" href="index2.html">See another homepage</a>
+    </div>
+  </div>
+</section>
+<!-- CUSTOMERS SECTION-->
+<section class="py-5 bg-gray-200">
+  <div class="container py-4">
+    <!-- Customer slider-->
+    <div class="swiper-container customers-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-auto"><img class="img-fluid img-grayscale d-block mx-auto" src="img/customer-1.png"
+            alt="..." width="140"></div>
+        <div class="swiper-slide h-auto"><img class="img-fluid img-grayscale d-block mx-auto" src="img/customer-2.png"
+            alt="..." width="140"></div>
+        <div class="swiper-slide h-auto"><img class="img-fluid img-grayscale d-block mx-auto" src="img/customer-3.png"
+            alt="..." width="140"></div>
+        <div class="swiper-slide h-auto"><img class="img-fluid img-grayscale d-block mx-auto" src="img/customer-4.png"
+            alt="..." width="140"></div>
+        <div class="swiper-slide h-auto"><img class="img-fluid img-grayscale d-block mx-auto" src="img/customer-5.png"
+            alt="..." width="140"></div>
+        <div class="swiper-slide h-auto"><img class="img-fluid img-grayscale d-block mx-auto" src="img/customer-6.png"
+            alt="..." width="140"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS SECTION-->
+<section class="py-5 bg-pentagon border-top border-gray-600">
+  <div class="container py-4">
+    <header class="mb-5">
+      <h2 class="lined lined-center text-uppercase mb-4">Testimonials</h2>
+      <p class="lead">We have worked with many clients and we always like to hear they come out from the cooperation
+        happy and satisfied. Have a look what our clients said about us.</p>
+    </header>
+    <!-- Testimonials slider-->
+    <div class="swiper-container testimonials-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-auto mb-5">
+          <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between">
+            <div class="mb-2">
+              <p class="text-sm text-gray-600">One morning, when Gregor Samsa woke from troubled dreams, he found
+                himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted
+                his head a little he could see his brown belly, slightly domed and divided by arches into stiff
+                sections.</p>
+              <p class="text-sm text-gray-600"></p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between"><i
+                class="fas fa-quote-left text-primary fa-2x"></i>
+              <div class="d-flex align-items-center ms-3">
+                <div class="me-3 text-end">
+                  <h5 class="text-uppercase mb-0">John McIntyre</h5>
+                  <p class="small text-muted mb-0">CEO, transTech</p>
+                </div><img class="avatar p-1 flex-shrink-0" src="img/person-1.jpg" alt="John McIntyre" width="60">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto mb-5">
+          <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between">
+            <div class="mb-2">
+              <p class="text-sm text-gray-600">The bedding was hardly able to cover it and seemed ready to slide off any
+                moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                as he looked. &quot;What's happened to me? &quot; he thought. It wasn't a dream.</p>
+              <p class="text-sm text-gray-600"></p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between"><i
+                class="fas fa-quote-left text-primary fa-2x"></i>
+              <div class="d-flex align-items-center ms-3">
+                <div class="me-3 text-end">
+                  <h5 class="text-uppercase mb-0">John McIntyre</h5>
+                  <p class="small text-muted mb-0">CEO, transTech</p>
+                </div><img class="avatar p-1 flex-shrink-0" src="img/person-2.jpg" alt="John McIntyre" width="60">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto mb-5">
+          <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between">
+            <div class="mb-2">
+              <p class="text-sm text-gray-600">His room, a proper human room although a little too small, lay peacefully
+                between its four familiar walls.</p>
+              <p class="text-sm text-gray-600">A collection of textile samples lay spread out on the table - Samsa was a
+                travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated
+                magazine and housed in a nice, gilded frame.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between"><i
+                class="fas fa-quote-left text-primary fa-2x"></i>
+              <div class="d-flex align-items-center ms-3">
+                <div class="me-3 text-end">
+                  <h5 class="text-uppercase mb-0">John McIntyre</h5>
+                  <p class="small text-muted mb-0">CEO, transTech</p>
+                </div><img class="avatar p-1 flex-shrink-0" src="img/person-3.png" alt="John McIntyre" width="60">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto mb-5">
+          <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between">
+            <div class="mb-2">
+              <p class="text-sm text-gray-600">It showed a lady fitted out with a fur hat and fur boa who sat upright,
+                raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned
+                to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made
+                him feel quite sad.</p>
+              <p class="text-sm text-gray-600"></p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between"><i
+                class="fas fa-quote-left text-primary fa-2x"></i>
+              <div class="d-flex align-items-center ms-3">
+                <div class="me-3 text-end">
+                  <h5 class="text-uppercase mb-0">John McIntyre</h5>
+                  <p class="small text-muted mb-0">CEO, transTech</p>
+                </div><img class="avatar p-1 flex-shrink-0" src="img/person-4.jpg" alt="John McIntyre" width="60">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto mb-5">
+          <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between">
+            <div class="mb-2">
+              <p class="text-sm text-gray-600">It showed a lady fitted out with a fur hat and fur boa who sat upright,
+                raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned
+                to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made
+                him feel quite sad. Gregor then turned to look out the window at the dull weather. Drops of rain could
+                be heard hitting the pane, which made him feel quite sad.</p>
+              <p class="text-sm text-gray-600"></p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between"><i
+                class="fas fa-quote-left text-primary fa-2x"></i>
+              <div class="d-flex align-items-center ms-3">
+                <div class="me-3 text-end">
+                  <h5 class="text-uppercase mb-0">John McIntyre</h5>
+                  <p class="small text-muted mb-0">CEO, transTech</p>
+                </div><img class="avatar p-1 flex-shrink-0" src="img/person-1.jpg" alt="John McIntyre" width="60">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- BLOG SECTION-->
+<section class="py-5">
+  <div class="container py-4">
+    <header class="mb-5">
+      <h2 class="lined lined-center text-uppercase mb-4">From the blog</h2>
+      <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="blog.html">Check our
+          blog</a></p>
+    </header>
+    <div class="row gy-5">
+      <!-- blog box-->
+      <div class="col-lg-3 col-md-6">
+        <div class="box-image">
+          <div class="mb-4 primary-overlay"><img class="img-fluid" src="img/portfolio-1.jpg" alt="...">
+            <div class="overlay-content d-flex flex-column justify-content-center p-4">
+              <ul class="list-inline mb-0 box-image-content text-center">
+                <li class="list-inline-item"><a class="btn btn-outline-light" href="blog-post.html"> <i
+                      class="fas fa-link me-2"></i>Read more</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="h4 text-uppercase text-primary"> <a class="text-reset" href="blog-post.html">Fashion now </a>
+            </h3>
+            <p class="small text-uppercase text-muted">By <a href="#">John snow </a>in <a href="#">Web design</a></p>
+            <p class="text-gray-600 text-sm text-start">Fifth abundantly made Give sixth hath. Cattle creature i be
+              don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p><a
+              class="btn btn-outline-primary" href="blog-post.html">Continue reading</a>
+          </div>
+        </div>
+      </div>
+      <!-- blog box-->
+      <div class="col-lg-3 col-md-6">
+        <div class="box-image">
+          <div class="mb-4 primary-overlay"><img class="img-fluid" src="img/portfolio-2.jpg" alt="...">
+            <div class="overlay-content d-flex flex-column justify-content-center p-4">
+              <ul class="list-inline mb-0 box-image-content text-center">
+                <li class="list-inline-item"><a class="btn btn-outline-light" href="blog-post.html"> <i
+                      class="fas fa-link me-2"></i>Read more</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="h4 text-uppercase text-primary"> <a class="text-reset" href="blog-post.html">What to do </a></h3>
+            <p class="small text-uppercase text-muted">By <a href="#">John snow </a>in <a href="#">Web design</a></p>
+            <p class="text-gray-600 text-sm text-start">Fifth abundantly made Give sixth hath. Cattle creature i be
+              don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p><a
+              class="btn btn-outline-primary" href="blog-post.html">Continue reading</a>
+          </div>
+        </div>
+      </div>
+      <!-- blog box-->
+      <div class="col-lg-3 col-md-6">
+        <div class="box-image">
+          <div class="mb-4 primary-overlay"><img class="img-fluid" src="img/portfolio-3.jpg" alt="...">
+            <div class="overlay-content d-flex flex-column justify-content-center p-4">
+              <ul class="list-inline mb-0 box-image-content text-center">
+                <li class="list-inline-item"><a class="btn btn-outline-light" href="blog-post.html"> <i
+                      class="fas fa-link me-2"></i>Read more</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="h4 text-uppercase text-primary"> <a class="text-reset" href="blog-post.html">5 ways to look
+                awesome </a></h3>
+            <p class="small text-uppercase text-muted">By <a href="#">John snow </a>in <a href="#">Web design</a></p>
+            <p class="text-gray-600 text-sm text-start">Fifth abundantly made Give sixth hath. Cattle creature i be
+              don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p><a
+              class="btn btn-outline-primary" href="blog-post.html">Continue reading</a>
+          </div>
+        </div>
+      </div>
+      <!-- blog box-->
+      <div class="col-lg-3 col-md-6">
+        <div class="box-image">
+          <div class="mb-4 primary-overlay"><img class="img-fluid" src="img/portfolio-4.jpg" alt="...">
+            <div class="overlay-content d-flex flex-column justify-content-center p-4">
+              <ul class="list-inline mb-0 box-image-content text-center">
+                <li class="list-inline-item"><a class="btn btn-outline-light" href="blog-post.html"> <i
+                      class="fas fa-link me-2"></i>Read more</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="h4 text-uppercase text-primary"> <a class="text-reset" href="blog-post.html">Fashion snow </a>
+            </h3>
+            <p class="small text-uppercase text-muted">By <a href="#">John snow </a>in <a href="#">Web design</a></p>
+            <p class="text-gray-600 text-sm text-start">Fifth abundantly made Give sixth hath. Cattle creature i be
+              don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p><a
+              class="btn btn-outline-primary" href="blog-post.html">Continue reading</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GET IT-->
+<div class="bg-primary py-5 text-white">
+  <div class="container text-center">
     <div class="row">
-        <div class="col-lg-4">
-            <p>
-                <i class="bi-cash-coin marketing-icon"></i>
-            </p>
-
-            <h2>Finanças</h2>
-            <p class="marketing-head">Some representative placeholder content for the three columns of text below the
-                carousel. This is the
-                first column.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <p>
-                <i class="bi-pencil-square marketing-icon"></i>
-            </p>
-            <h2>Relatórios</h2>
-            <p class="marketing-head">Another exciting bit of representative placeholder content. This time, we've moved
-                on to the second
-                column.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <p>
-                <i class="bi-calendar-plus marketing-icon"></i>
-            </p>
-            <h2>Próximas Ações</h2>
-            <p class="marketing-head">And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    {{--
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                    mind.</span></h2>
-            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-                here.</p>
-        </div>
-        <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                    dy=".3em">500x500</text>
-            </svg>
-
-        </div>
+      <div class="col-lg-8 p-3">
+        <h3 class="text-uppercase mb-0">Do you want cool website like this one?</h3>
+      </div>
+      <div class="col-lg-4 p-3"> <a class="btn btn-outline-light" href="#">Buy this template now</a></div>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span>
-            </h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-                layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                    dy=".3em">500x500</text>
-            </svg>
-
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                intended to be actually read, simply here to give you a better view of what this would look like with
-                some actual content. Your content.</p>
-        </div>
-        <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                    dy=".3em">500x500</text>
-            </svg>
-
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES --> --}}
-
-</div><!-- /.container -->
-
-{{-- Administrative Council section --}}
-
-<div class="container council mt-5">
-    <hr class="featurette-divider">
-    <h2>Conselho &nbsp; Administrativo</h2>
-    <div class="row text-center bg-light">
-        <div class="col">
-            <p>
-                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
-                    data-holder-rendered="true">
-            </p>
-
-            <div class="council-name">Hildebrando Alves de Oliveira</div>
-            <p class="council-function">Síndico</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col">
-            <p>
-                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
-                    data-holder-rendered="true">
-            </p>
-            <div class="council-name">José Liberalino da Nóbrega</div>
-            <p class="council-function">Subsíndico</p>
-
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col">
-            <p>
-                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
-                    data-holder-rendered="true">
-            </p>
-            <div class="council-name">Jorge Loureiro Dias</div>
-            <p class="council-function">Conselheiro</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col">
-            <p>
-                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
-                    data-holder-rendered="true">
-            </p>
-            <div class="council-name">Fernanda Maria Lucena de Oliveira</div>
-            <p class="council-function">Conselheiro</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col">
-            <p>
-                <img class="rounded-circle shadow p-1" alt="100x100" src="{{ asset('img/jorge_160x160.png')}}"
-                    data-holder-rendered="true">
-            </p>
-            <div class="council-name">Eugênio Cabral Pacelli da Costa</div>
-            <p class="council-function">Conselheiro</p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
+  </div>
 </div>
-<!-- Begin footer.inc -->
-<footer class="footer">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col">
-                <p class="fs-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nemo non vero sint voluptas, nulla
-                    libero eligendi possimus deleniti quo saepe error, provident nostrum dolorum, id ipsam, quisquam
-                    praesentium pariatur.
-                </p>
-            </div>
-            <div class="col"></div>
-            <div class="col">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.114463832188!2d-34.827858600000035!3d-7.112731899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd23606ca353%3A0xfcba3e76b328c985!2sR.+Isidro+Gomes%2C+435+-+Tamba%C3%BA%2C+Jo%C3%A3o+Pessoa+-+PB%2C+58039-160!5e0!3m2!1spt-BR!2sbr!4v1444134267159"
-                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <p class="text-muted text-center">
-            &copy;&nbsp;2015 - &nbsp;
-            <a href="mailto:jloudias@gmail.com">Jorge LoureiroDias</a>
-        </p>
-    </div>
-</footer>
 
 
-@stop
+@endsection

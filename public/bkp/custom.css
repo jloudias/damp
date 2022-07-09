@@ -1,0 +1,371 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.marketing-icon{
+  font-size: 6rem; 
+  color: 
+  rgb(129, 4, 79);
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 2.5rem;
+  color: #e74c3c;
+  font-family: 'Arvo', courier, serif;
+  text-transform: uppercase;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+.marketing-head{
+  font-size: 1.1rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+   
+
+/* Modify Boostrap defaults */
+
+.navbar-dark .navbar-brand{
+	/*color: #C4C4C4;*/
+  color:#F1F1F1;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  /*background-color: #D4D4D4;*/
+  color: #d8d8d8; 
+  font-size: 1rem;
+ 
+}
+
+.py-4 {
+  padding-top: 1.9rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.panel-body > ul >li{
+  padding-bottom: 6px;
+}
+.panel-title > a{
+  text-decoration: none;
+}
+.panel-title > a:hover{
+  color:#999999;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+.dropdown-menu>li>a:hover{
+  background-color: #eee;
+}
+
+/* Conselho */
+
+.council .col {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.council h2 {
+  font-weight: 3rem;
+  color: #e74c3c;
+  font-family: 'Arvo', courier, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.council img{
+  max-width: 60%;
+}
+.council-name{
+  font-size: 1.1rem;
+  font-family: 'Roboto',courier,serif;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+}
+.council-function{
+  font-weight: 1rem;
+  font-family: 'Arvo', courier, serif;
+  text-transform: uppercase;
+  /*letter-spacing: 0.2rem; */
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+
+/* Footer */
+.footer{
+	background-color: #EAEAEA;
+  padding-top: 2rem;
+  font-weight: 2rem !important;
+  font-family: 'Arvo', courier, serif;
+  margin-bottom: 3rem;
+}
+.footer a{
+  color: #555;
+}
+
+/* texto do copyright */
+.text-muted{
+	font-family: 'Lato', sans-serif;
+  color: #555;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* My classess */
+.my-page-header{
+	padding-bottom: 9px;
+  margin: 40px 0 10px;
+}
+.navbar-nome{
+	color: white;
+  padding-top: 15px;
+}
+.erro-login{
+  color:red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #eee;
+  padding: 10px;
+  margin: 0 30px;
+  border-left: 10px solid;
+}
+.my-lead{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+
+/*
+.nav-tabs > li > a {
+  background: #eaedf2;
+  border: 1px solid #a48686;
+  border-bottom: none;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 1.5em;
+}
+*/
+
+/* Blog */
+
+#blog-page{
+  padding-top: 90px;
+}
+
+#blog-page img{
+  width:100%;
+}
+
+.blog-text p{ 
+  text-rendering:optmizeLegibility; 
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.post-meta{
+  font-style: italic;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+#subscribe-box{
+  border: 5px dashed #32CD32;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 5px 15px ;
+  text-align: center;
+}
+
+#subscribe-box h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+#subscribe-box p{
+  text-align: justify;
+  padding-bottom: 5px;
+}
+
+#subscribe-box .btn{
+  font-size: 15px;
+  font-family: 'Lato', courier, sans serif;
+  /*letter-spacing: 1.5px;*/
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#aviso h4{
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#aviso p{
+  line-height: 1.8em;
+  text-rendering:optmizeLegibility;
+  text-align: justify;
+}
+
+#populares{
+  margin-top: 50px;
+}
+
+#populares ul li:first-child{
+  background-color: #efefef;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Home */
+#quem-somos{
+  padding-top: 80px;
+}
+
+#quem-somos a{
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  padding: 15px;
+  margin:10px;
+  height: 50px;
+}
+#colab{
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/* Sobre */
+#sobre{
+  margin-top: 50px;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: repeat;
+}
+#sobre img{
+  border-radius: 100px;
+  float: left;
+  margin-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sobre h2{
+  line-height: 1.5;
+  color:#e74c3c;
+  font-family: 'Arvo', courier, serif;
+  text-align: justify;
+  font-size: 25px;
+}
+
+#sobre-text{
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/** FAQ */
+#accordion p,a{
+  line-height: 1.5;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .carousel-item img{
+    width: 10%;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
