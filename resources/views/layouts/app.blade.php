@@ -15,7 +15,7 @@
         <!-- Choices.js [Custom select]-->
         <link rel="stylesheet" href="{{ asset('vendor/choices.js/public/assets/styles/choices.css')}}">
         <!-- Theme stylesheet-->
-        <link rel="stylesheet" href="{{ asset('css/style.default.css')}}" id="theme-stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/style.marsala.css')}}" id="theme-stylesheet">
         <!-- Custom stylesheet - for your changes-->
         <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
         <!-- Favicon and apple touch icons-->
